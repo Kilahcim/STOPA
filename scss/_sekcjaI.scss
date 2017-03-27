@@ -1,0 +1,298 @@
+// SLAJDER
+.slider {
+
+  .row {
+    position: relative;
+  }
+
+  .img {
+
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .slide-one {
+  background-image: url("../images/slider1back.JPG");
+  background-position: center;
+  background-size: cover;
+  // Według życzenia z maila background-size: cover
+  }
+  .slide-two {
+    background-image: url("../images/slider2back.jpg");
+    background-position: center;
+    background-size: cover;
+    // Według życzenia z maila background-size: cover
+
+  }
+  .slide-three {
+    background-image: url("../images/slider3back.JPG");
+    background-position: center;
+    background-size: cover;
+    // Według życzenia z maila background-size: cover
+
+  }
+  .paragraph {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    #first-p{
+      font-family: 'Lombard';
+      // font-size: 85px;
+      font-size: 4em;
+      color: #c69c6d;
+      line-height: 0.8em;
+      span{
+        // font-size: 48px;
+        font-size: 0.5em;
+      }
+    }
+
+    #second-p{
+      font-family: 'Havana';
+      // font-size: 48px;
+      font-size: 2em;
+      color: #22b573;
+      span {
+        font-family: 'Cyrulik Sharp';
+        // font-size: 48px;
+        font-size: 1em;
+        color: #FFFFFF;
+      }
+    }
+    #third-p{
+      font-family: 'Praho';
+      // font-size: 30px;
+      line-height: 0.8em;
+      font-size: 3em;
+      color: #c69c6d;
+      span{
+        font-family: 'Lombard';
+        // font-size: 128px;
+        font-size:: 1em;
+        color: #FFFFFF;
+
+      }
+    }
+  }
+}
+// MENU:
+
+nav {
+  height: 120px;
+  width: 100vw;
+  border-bottom: 1px dashed green;
+  position: absolute;
+  top: 0;
+  z-index: 10001;
+  // WYZEROWANY PADDING PONIEWAŻ PO ROZWINIECIU H.MENU ZOSTAWAŁA LUKA SZEROKOSCI PADDINGU
+  .container{
+    .row{
+      [class*='col-']{
+        float: right;
+      }
+      .col-12 {
+        padding: 0;
+      }
+      .col-6 {
+        width: 75%;
+      }
+    }
+  }
+
+  .logo{
+    height: 120px;
+    width: 140px;
+    background-image: url("../images/logoWhite.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  .hamburger {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 2em;
+    right: 2em;
+    background-image: url("../images/menuIcon.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .cross{
+    display: none;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    width: 2em;
+    height: 2em;
+    background-image: url("../images/closeMenuIcon.png");
+    background-position: center;
+    background-size: contain;
+    z-index: 9999;
+  }
+
+
+  .menu {
+    display: none;
+    position: relative;
+    top: -120px;
+    height: 100vh;
+    background-color: white;
+    float: right;
+
+    ul {
+      padding-top: 120px;
+      list-style: none;
+
+
+      li{
+        text-align: center;
+        padding: 25px;
+
+        a{
+          color: black;
+          text-decoration: none;
+          font-family: 'Rewir';
+          font-size: 36px;
+        }
+
+      .fb {
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/fbIconBlack.png");
+        background-position: center;
+        background-size: cover;
+        margin: auto;
+        }
+      }
+    }
+  }
+}
+// ODNOŚNIK DO SEKCJI ONAS:
+.main-arrow {
+  text-align: center;
+  position: relative;
+  top: -7em;
+
+}
+//ROZMIAR HEADERA
+
+header {
+  height: 100vh;
+  width: 100vw;
+}
+@media (min-width: 768px) {
+  .slider {
+    .slick-next {
+      position: absolute;
+      margin-top: 1em;
+      top: 50%;
+      right: 5%;
+
+      img{
+        width: 200%;
+      }
+    }
+    .slick-prev {
+
+      position: absolute;
+      margin-top: 1em;
+      top: 50%;
+      left: 5%;
+      z-index: 1000;
+
+      img{
+        width: 200%;
+      }
+    }
+  }
+  nav{
+    .menu{
+      ul{
+        li{
+
+          .fb{
+            height: 90px;
+            width: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 960px) {
+  .slider{
+    .paragraph{
+      #first-p{
+        font-size: 85px;
+        span{
+          font-size:48px;
+        }
+      }
+      #second-p{
+        font-size: 48px;
+        span {
+          font-size: 48px;
+        }
+      }
+      #third-p{
+        font-size: 30px;
+        line-height: 80px;
+        span{
+          font-size: 128px;
+        }
+      }
+
+    }
+  }
+  nav {
+    .hamburger {
+      display: none;
+    }
+    .menu{
+      background: none;
+      display: block;
+      height: 120px;
+
+
+      ul{
+        padding-top: 0px;
+        float: right;
+        padding-right: 2em;
+        li{
+          display: inline-block;
+          padding: 0.5em;
+          line-height: 120px;
+          a{
+            color: white;
+            font-size: 16px;
+          }
+          div {
+            position: relative;
+          }
+          .fb {
+            width: 30px;
+            height: 30px;
+            background-image: url("../images/fbIconWhite.png");
+            background-position: center;
+            background-size: contain;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            }
+        }
+      }
+    }
+  }
+}

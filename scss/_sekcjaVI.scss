@@ -1,0 +1,147 @@
+.mod6 {
+  background-color: #e8d7c5;
+  .slick-slide {
+    padding-bottom: 2em;
+  }
+  .gallery{
+    padding-bottom: 2em;
+  }
+
+  .gallerypicture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: auto;
+  }
+  .text {
+    position: relative;
+    margin: auto;
+    width: 100vw;
+    word-wrap: break-word;
+    p{
+      padding-top: 0.4em;
+      text-align: center;
+      font-size: 48px;
+      font-family: 'Praho';
+      color: #8c6239;
+    }
+
+
+  }
+
+  .picture-one {
+  background-image: url("../images/inne/inne1.jpg");
+  background-position: center;
+  background-size: cover;
+  }
+  .picture-two {
+  background-image: url("../images/inne/inne2.jpg");
+  background-position: center;
+  background-size: cover;
+  }
+  .picture-three {
+  background-image: url("../images/inne/inne3.jpg");
+  background-position: center;
+  background-size: cover;
+  }
+  .picture-four {
+  background-image: url("../images/inne/inne4.jpg");
+  background-position: center;
+  background-size: cover;
+  }
+  .slick-next {
+    position: absolute;
+    margin-top: 1em;
+    top: 86%;
+    right: 5%;
+    z-index: 10000;
+  }
+  .slick-prev {
+    position: absolute;
+    margin-top: 1em;
+    top: 86%;
+    left: 5%;
+    z-index: 10000;
+  }
+
+
+}
+@media (min-width: 200px) {
+  .mod6{
+    .gallerypicture{
+      width: 180px;
+      height: 180px;
+    }
+  }
+}
+@media (min-width: 320px) {
+  .mod6{
+    .gallerypicture{
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+@media (min-width: 768px){
+  .mod6{
+    .gallerypicture{
+      width: 352px;
+      height: 352px;
+    }
+    .text {
+      width: auto;
+      p{
+        font-size: 36px;
+      }
+    }
+  .slick-next {
+    position: absolute;
+    margin-top: 1em;
+    top: 90%;
+    right: 5%;
+    z-index: 10000;
+      img {
+        width: 200%;
+      }
+    }
+  .slick-prev {
+    position: absolute;
+    margin-top: 1em;
+    top: 90%;
+    left: 5%;
+    z-index: 10000;
+      img {
+        width: 200%;
+      }
+    }
+  }
+}
+@media (min-width: 960px){
+  .mod6{
+    .gallerypicture{
+      width: 220px;
+      height: 220px;
+    }
+    .text {
+      p{
+        font-size: 21px;
+      }
+    }
+
+  }
+}
+@media (min-width: 960px){
+  .mod6{
+    .gallerypicture{
+      width: 270px;
+      height: 270px;
+    }
+    .text {
+      p{
+        font-size: 21px;
+      }
+    }
+
+  }
+}

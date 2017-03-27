@@ -1,0 +1,194 @@
+.mod7 {
+  .visible {
+    display: none;
+  }
+  .container {
+    max-width: none;
+    .row{
+      [class*='col-']{
+        padding: 0;
+      }
+      .col-6 {
+        width: 100%;
+        // padding-bottom: 120px;
+        // padding-top: 120px;
+
+      }
+    }
+  }
+  .slogany{
+    .image {
+      display: none;
+    }
+    .slick-dots{
+      position: absolute;
+      top: 90%;
+      text-align: center;
+      width: 100%;
+
+      li{
+        display: inline-block;
+      }
+
+    }
+    .slideOne{
+      .col-6 {
+        position: relative;
+        background-color: #a67c52;
+        height: 100vh;
+          p:nth-child(1){
+            padding-top: 1em;
+            font-size: 136px;
+            font-family: "Cyrulik Sharp";
+            color: #ffffff;
+            text-align: center;
+
+          }
+          p:nth-child(2), p:nth-child(3) {
+            font-size: 72px;
+            line-height: 57px;
+            font-family: "Havana";
+            color: #333333;
+            text-align: center;
+          }
+        .iconOne{
+          background-image: url("../images/modul7/icon1.png");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+
+
+    .slideTwo{
+      .col-6 {
+        position: relative;
+        background-color: #333333;
+        height: 100vh;
+
+        p:first-child {
+          padding-top: 1em;
+          color: #c69c6d;
+          font-size: 72px;
+          font-family: 'Havana';
+          text-align: center;
+
+        }
+        p:nth-child(3) {
+          color: #ffffff;
+          font-size: 76px;
+          font-family: 'Praho';
+          text-align: center;
+        }
+        p:nth-child(5) {
+          color: #c69c6d;
+          font-family: 'Cyrulik Sharp';
+          font-size: 54px;
+          text-align: center;
+        }
+        .iconTwo{
+          background-image: url("../images/modul7/icon2.png");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+
+    .slideThree{
+      .col-6{
+        position: relative;
+        background-color: #bce9d5;
+        height: 100vh;
+
+        p:first-child {
+          padding-top: 1em;
+          color: #333333;
+          font-family:"Cyrulik Sharp";
+          font-size: 40px;
+          text-align: center;
+        }
+        p:nth-child(3){
+            color: #333333;
+            font-family: "Praho";
+            font-size: 28px;
+            text-align: center;
+        }
+        p:nth-child(5) {
+            color: #333333;
+            font-family: "Havana";
+            font-size: 52px;
+            text-align: center;
+        }
+        p:nth-child(7) {
+            color: #333333;
+            font-family: "Praho";
+            font-size: 28px;
+            text-align: center;
+        }
+        p:nth-child(9) {
+            color: #333333;
+            font-family: "Cyrulik Sharp";
+            font-size: 86px;
+            text-align: center;
+        }
+        .iconThree{
+          background-image: url("../images/modul7/icon3.png");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+    .icon{
+      height: 200px;
+      width: 200px;
+      margin: auto;
+    }
+  }
+}
+@media(min-width: 960px){
+  .mod7{
+    .visible {
+      display: block;
+    }
+    .container {
+      .row{
+        .col-6 {
+          width: 50%;
+          float: left;
+        }
+      }
+    }
+    .slogany {
+      .slick-dots{
+        position: absolute;
+        top: 90%;
+        left: -26%;
+        text-align: center;
+        width: 100%;
+      }
+      #img-1{
+        background-image: url("../images/modul7/half1.JPG");
+        background-position: center;
+        background-size: cover;
+
+      }
+      #img-2{
+        background-image: url("../images/modul7/half2.jpg");
+        background-position: center;
+        background-size: cover;
+
+      }
+      #img-3{
+        background-image: url("../images/modul7/half3.JPG");
+        background-position: center;
+        background-size: cover;
+
+      }
+      .image{
+        display: inline-block;
+        width: 50vw;
+        height: 100vh;
+      }
+    }
+  }
+}

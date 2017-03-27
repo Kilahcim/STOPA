@@ -1,0 +1,69 @@
+@import "_grid.scss";
+@import "_fonts.scss";
+@import "_modal.scss";
+@import "_sekcjaI.scss";
+@import "_sekcjaII.scss";
+@import "_sekcjaIII.scss";
+@import "_sekcjaIV.scss";
+@import "_sekcjaV.scss";
+@import "_sekcjaVI.scss";
+@import "_sekcjaVII.scss";
+@import "_sekcjaVIII.scss";
+@import "_sekcjaIX.scss";
+@import "_sekcjaX.scss";
+@import "_sekcjaXI.scss";
+
+body{
+  border-top: 1px solid black;
+  width: 100vw;
+  word-wrap: break-word;
+}
+
+//Nagłówki Modułów
+.head {
+  margin-top: 2em;
+
+  p {
+    color:#666666;
+    font-size: 36px;
+    font-family: 'Praho';
+    text-align: center;
+    padding: 0;
+  }
+  hr{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #22b573;
+    border: none;
+    width: 40px;
+    height: 4px;
+  }
+}
+
+//Strzałki
+.arrow {
+    text-align: center;
+    margin-top: 2em;
+    padding-bottom: 1em;
+}
+
+@media (min-width: 768px){
+  .head {
+
+    p {
+      font-size: 30px;
+    }
+  }
+}
+@media (min-width: 960px){
+  .head {
+
+    p {
+      font-size: 21px;
+    }
+    hr {
+      margin-top: 10px;
+    }
+  }
+}

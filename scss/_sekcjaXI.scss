@@ -1,0 +1,58 @@
+.mod11 {
+  background-color: #333333;
+
+  .head{
+    p{
+      color: #ffffff;
+    }
+  }
+  .detales {
+    margin: auto;
+    p {
+      line-height: 24px;
+      font-size: 16px;
+      color: #ffffff;
+
+    }
+    p:first-of-type {
+      text-align: center;
+    }
+  }
+
+  .arrowUp{
+
+    margin-top: 1em;
+
+
+  }
+
+  footer{
+    height: 3em;
+    background-color: #c69c6d;
+  }
+}
+@media (min-width: 768px) {
+  .mod11{
+    .container{
+      .row {
+        .col-11{
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 960px) {
+  .mod11{
+    .container{
+      .row {
+        .col-11{
+          width: 40%;
+        }
+      }
+    }
+  }
+  footer {
+    height: 2em;
+  }
+}

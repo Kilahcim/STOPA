@@ -1,0 +1,158 @@
+.mod5{
+  background-image: url("../images/proces_md.jpg");
+  background-position: center;
+  background-size: cover;
+  .container{
+    .row {
+      .col-6 {
+        width: 100%;
+      }
+      .picture {
+        display: none;
+      }
+      .width-text {
+        display: none;
+      }
+    }
+  }
+
+  .regula{
+    .head{
+      p {
+        color:#666666;
+        font-size: 36px;
+        line-height: 48px;
+        font-family: 'Praho';
+        text-align: center;
+
+        }
+      hr{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+        border: none;
+        width: 40px;
+        height: 4px;
+      }
+    }
+    .col-4 {
+      width: 80%;
+      margin: auto;
+    }
+    p{
+      color: #111111;
+      font-family: "Rewir";
+      font-size: 16px;
+      line-height: 24px;
+      width: 80%;
+      margin: 0 auto;
+      // padding-bottom: 20px;
+    }
+    .rest {
+      display: none;
+    }
+    button {
+      border: none;
+      background: none;
+      color: #111111;
+      font-family: "Rewir";
+      font-size: 16px;
+      color: #333333;
+      line-height: 24px;
+      img{
+        position: relative;
+        top: 0.5em;
+        left: -0.2em;
+      }
+    }
+  }
+}
+@media (min-width:768px) {
+  .mod5 {
+    .regula {
+      p{
+        line-height: 42px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+@media (min-width: 960px) {
+  .mod5 {
+    .regula{
+      p{
+        color: #111111;
+        line-height: 42px;
+        font-size: 21px;
+      }
+      .head{
+        p{
+          font-size: 21px;
+        }
+        hr{
+          margin-top: auto;
+        }
+      }
+    }
+    .container {
+      max-width: none;
+      .row{
+        .col-6{
+          width: 100%;
+        }
+        .col-4{
+          width: 100%;
+          float: none;
+          float: left;
+          margin: auto;
+          width: 43%;
+        }
+        .col-1,  {
+          float: left;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1366px) {
+  .mod5{
+    background-color: #bce9d5;
+    background-image: url();
+    .container {
+      .narrow-text{
+        display: none;
+      }
+      .row{
+        .picture{
+          display: inline-block;
+          background-image: url("../images/proces.jpg");
+          background-size: cover;
+          background-position: center;
+          padding:0;
+          height: 55vh;
+        }
+        .width-text{
+          display: inline-block;
+          p{
+            font-family: 'Rewir';
+            font-size: 16px;
+            line-height: 24px;
+            color: #333333;
+          }
+        }
+        .col-6 {
+          width: 50%;
+          float: left;
+          padding: 0;
+        }
+        .col-4 {
+          float: none;
+          width: 100%;
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

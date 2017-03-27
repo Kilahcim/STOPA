@@ -1,0 +1,153 @@
+.mod3 {
+  background-color: #cccccc;
+
+  .container {
+
+      .col-2{
+        width: 100%;
+        margin: auto;
+        word-wrap: break-word;
+        p{
+          margin-top: 20px;
+          font-size: 30px;
+          font-family: 'Praho';
+          color:#4d4d4d;
+          padding-bottom: 1em;
+          text-align: center;
+        }
+        span {
+          font-size: 32px;
+          font-family: 'Praho';
+          color: #8c6239;
+        }
+      }
+
+  }
+  .images-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .circle {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+
+
+
+  }
+  .anna{
+    background-image: url("../images/nasi_fachowcy/anna.jpg");
+
+  }
+  .aleksander{
+    background-image: url("../images/nasi_fachowcy/aleksander.jpg");
+
+  }
+  .piotr{
+    background-image: url("../images/nasi_fachowcy/piotr.jpg");
+
+  }
+  .kazimierz{
+    background-image: url("../images/nasi_fachowcy/kazimierz.jpg");
+  }
+  .marek{
+    background-image: url("../images/nasi_fachowcy/marek.jpg");
+  }
+  .zdzislaw{
+    background-image: url("../images/nasi_fachowcy/zdzislaw.jpg");
+  }
+
+}
+@media (min-width: 320px) {
+  .mod3 {
+    .container {
+
+      .col-2{
+        width: 50%;
+        margin: 0;
+        p{
+          font-size: 20px;
+
+        }
+        span{
+          font-size: 20px;
+
+        }
+      }
+      .circle {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}
+@media (min-width: 500px) {
+  .mod3 {
+    .container {
+
+      .col-2{
+        width: 50%;
+        margin: 0;
+        p{
+          font-size: 25px;
+
+        }
+        span{
+          font-size: 25px;
+
+        }
+      }
+      .circle {
+        width: 228px;
+        height: 228px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .mod3{
+    .container{
+      .col-2{
+        width: 33.33%;
+
+      }
+    }
+  }
+}
+@media (min-width: 960px) {
+  .mod3{
+    .container{
+
+      .col-2{
+        width: 16.66%;
+        p {
+          font-size: 14px;
+        }
+        span {
+          font-size: 19px;
+        }
+
+      }
+      .circle {
+        height: 140px;
+        width: 140px;
+      }
+    }
+  }
+}
+@media (min-width: 1366px) {
+  .mod3{
+    .container{
+      .circle {
+        height: 170px;
+        width: 170px;
+      }
+    }
+  }
+}

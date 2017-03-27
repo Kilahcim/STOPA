@@ -1,0 +1,120 @@
+.mod8 {
+  .container {
+    .row {
+      .col-12 {
+        padding: 0;
+      }
+    }
+  }
+
+  .galleryimg-two {
+    height: 200px;
+    padding: 0;
+  }
+  #img-1{
+    background-image: url("../images/sz/s1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #img-2{
+    background-image: url("../images/sz/s2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #img-3{
+    background-image: url("../images/sz/s3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #img-4{
+    background-image: url("../images/sz/s4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #img-5{
+    background-image: url("../images/sz/s5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .text{
+
+    p{
+      text-align: center;
+      font-family: "Rewir";
+      font-size: 16px;
+      color: #333333;
+      padding-bottom: 1em;
+    }
+  }
+}
+@media (min-width: 768px){
+  .mod8{
+    .text{
+      p{
+        font-size: 24px;
+      }
+    }
+  }
+}
+@media (min-width: 960px){
+  .mod8{
+    .gallery-slider-two {
+      .slick-next {
+        position: absolute;
+        margin-top: 1em;
+        top: -30%;
+        right: 5%;
+      }
+      .slick-prev {
+
+        position: absolute;
+        margin-top: 1em;
+        top: -30%;
+        left: 5%;
+      }
+    }
+    .text{
+      width: 66.6667%;
+      margin: auto;
+      p{
+        font-size: 16px;
+        line-height: 24px;
+
+      }
+    }
+  }
+}
+@media (min-width: 1366px){
+  .mod8{
+    .gallery-slider-two {
+      .slick-next {
+        position: absolute;
+        margin-top: 1em;
+        top: 50%;
+        right: -5%;
+      }
+      .slick-prev {
+
+        position: absolute;
+        margin-top: 1em;
+        top: 50%;
+        left: -5%;
+      }
+    }
+    .text{
+      padding-top: 1em;
+      width: 66.6667%;
+      margin: auto;
+      p{
+        font-size: 16px;
+        line-height: 24px;
+
+      }
+    }
+  }
+}

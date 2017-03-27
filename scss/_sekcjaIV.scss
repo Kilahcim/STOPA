@@ -1,0 +1,186 @@
+.galeria {
+  border-top: 2px dashed green;
+  border-bottom: 2px dashed green;
+  height: 50vh;
+  .container {
+    .row {
+      .col-12 {
+        padding: 0;
+      }
+    }
+  }
+
+  .close-me {
+    background-image: url("../images/closeMenuIcon.png");
+  }
+
+  .galleryimg {
+    height: 200px;
+    padding: 0;
+  }
+
+  .slick-next {
+      position: absolute;
+      margin-top: 1em;
+      top: 100%;
+      right: 5%;
+  }
+  .slick-prev {
+
+      position: absolute;
+      margin-top: 1em;
+      top: 100%;
+      left: 5%;
+    }
+
+
+  #gallery {
+    height: 50vh;
+  }
+  #img1{
+    background-image: url("../images/galeria/g1.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #img2{
+      background-image: url("../images/galeria/g2.JPG");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img3{
+      background-image: url("../images/galeria/g3.JPG");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img4{
+      background-image: url("../images/galeria/g4.JPG");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img5{
+      background-image: url("../images/galeria/g5.JPG");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img6{
+      background-image: url("../images/galeria/g6.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img7{
+      background-image: url("../images/galeria/g7.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img8{
+      background-image: url("../images/galeria/g8.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img9{
+      background-image: url("../images/galeria/g9.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img10{
+      background-image: url("../images/galeria/g10.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img11{
+      background-image: url("../images/galeria/g11.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img12{
+      background-image: url("../images/galeria/g12.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img13{
+      background-image: url("../images/galeria/g13.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img14{
+      background-image: url("../images/galeria/g14.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img15{
+      background-image: url("../images/galeria/g15.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img16{
+      background-image: url("../images/galeria/g16.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img17{
+      background-image: url("../images/galeria/g17.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  #img18{
+      background-image: url("../images/galeria/g18.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+}
+@media (min-width: 960px) {
+
+  .galeria{
+
+    .slick-next {
+      position: absolute;
+      margin-top: 1em;
+      top: -30%;
+      right: 5%;
+    }
+    .slick-prev {
+
+      position: absolute;
+      margin-top: 1em;
+      top: -30%;
+      left: 5%;
+    }
+  }
+}
+@media (min-width: 1366px) {
+
+  .galeria{
+
+    .slick-next {
+      position: absolute;
+      margin-top: 1em;
+      top: 50%;
+      right: -5%;
+    }
+    .slick-prev {
+
+      position: absolute;
+      margin-top: 1em;
+      top: 50%;
+      left: -5%;
+    }
+  }
+}

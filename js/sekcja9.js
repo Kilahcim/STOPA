@@ -28,7 +28,6 @@ $(document).ready(function(){
   $(window).on('resize', function () {
     var width = $(window).width();
 
-    console.log(width);
     if(width > 959) {
       badArrow.hide();
       badText.show();

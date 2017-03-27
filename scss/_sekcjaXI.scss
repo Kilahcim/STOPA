@@ -1,5 +1,12 @@
 .mod11 {
   background-color: #333333;
+  .container{
+    .row{
+      .col-11{
+        width: 38.668%;
+      }
+    }
+  }
 
   .head{
     p{
@@ -15,7 +22,7 @@
 
     }
     p:first-of-type {
-      text-align: center;
+      text-align: left;
     }
   }
 
@@ -47,7 +54,7 @@
     .container{
       .row {
         .col-11{
-          width: 40%;
+          width: 27%;
         }
       }
     }

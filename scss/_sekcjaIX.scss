@@ -73,7 +73,7 @@
     .container {
       .row {
         .col-6 {
-          width: 50%;
+          width: 100%;
         }
         .col-7 {
           width: 58.33%;
@@ -93,6 +93,7 @@
       .row {
         .col-6{
           float: left;
+          width: 50%;
         }
         .NFZ-picture{
           display: block;

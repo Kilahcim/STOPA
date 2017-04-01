@@ -1,7 +1,8 @@
 .galeria {
   border-top: 2px dashed green;
   border-bottom: 2px dashed green;
-  height: 50vh;
+  // height: 50vh;
+  padding-bottom: 5em;
   .container {
     .row {
       .col-12 {
@@ -15,7 +16,7 @@
   }
 
   .galleryimg {
-    height: 200px;
+    height: 35vh;
     padding: 0;
   }
 
@@ -35,7 +36,7 @@
 
 
   #gallery {
-    height: 50vh;
+    // height: 50vh;
   }
   #img1{
     background-image: url("../images/galeria/g1-min.JPG");
@@ -144,6 +145,13 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+  }
+}
+@media (min-width: 500px) {
+  .galeria {
+    .galleryimg {
+      height: 39vh;
+    }
   }
 }
 @media (min-width: 960px) {

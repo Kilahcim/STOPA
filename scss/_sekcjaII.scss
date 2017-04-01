@@ -6,16 +6,25 @@
       }
       #header {
         font-family: "Havana";
-        font-size: 55px;
+        font-size: 36px;
         color: #8c6239;
         text-align: center;
         padding-bottom: 1em;
       }
     }
     .section {
+      .space-left{
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+      #border {
+        padding-bottom: 1em;
+      }
+
+
       p{
         font-family: "Rewir";
-        font-size: 36px;
+        font-size: 24px;
         color: #4d4d4d;
         text-align: center;
       }
@@ -25,7 +34,7 @@
 
         li{
           margin: 1em;
-          font-size: 36px;
+          font-size: 24px;
           font-family: 'Rewir';
           color: #4d4d4d;
           text-align: center;
@@ -89,6 +98,12 @@
         }
       }
       .section{
+        .space-right {
+          padding-right: 2em;
+        }
+        .space-left {
+          padding-left: 2em;
+        }
         p{
           font-size: 16px;
           line-height: 24px;

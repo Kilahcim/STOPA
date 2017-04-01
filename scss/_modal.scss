@@ -65,7 +65,8 @@ body.modal-open::before{
 @media (min-width: 960px) {
   .modal{
     position:relative;
-    top: -15em;
+    width: 50vw;
+    top: -50vh;
     left: 50%;
   }
 }

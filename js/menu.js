@@ -36,6 +36,11 @@ $(function (){
           'background-image': 'url("images/menuIconBlack.png")'
         });
       }
+      if(width < 960) {
+        anchor.css ({
+          'color': 'black',
+        });
+      }
       if ((scroll > 0) && (width > 959)){
         anchor.css ({
           'color': 'black',
@@ -69,9 +74,21 @@ $(function (){
 
   });
 // Funkcja smooth scroll - potrzebuje przy niej pomocy. Działa tylko jak odpalam ją z poziomu menu .
-
+  //
   // $('a[href*=\\#]').on('click', function(event){
   //     event.preventDefault();
-  //     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+  //     $('html,body').animate({scrollTop:$(this.hash).offset().top - 120}, 500);
   // });
+    $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top -120
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });

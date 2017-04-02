@@ -2,14 +2,15 @@
   background-image: url("../images/proces_md.jpg");
   background-position: center;
   background-size: cover;
+  .picture {
+    display: none;
+  }
   .container{
     .row {
       .col-6 {
         width: 100%;
       }
-      .picture {
-        display: none;
-      }
+
       .width-text {
         display: none;
       }
@@ -20,7 +21,7 @@
     .head{
       p {
         color:#666666;
-        font-size: 36px;
+        font-size: 24px;
         line-height: 48px;
         font-family: 'Praho';
         text-align: center;
@@ -46,7 +47,7 @@
       line-height: 24px;
       width: 80%;
       margin: 0 auto;
-      // padding-bottom: 20px;
+      padding-bottom: 1em;
     }
     .rest {
       display: none;
@@ -73,6 +74,7 @@
       p{
         line-height: 42px;
         font-size: 24px;
+
       }
     }
   }
@@ -95,7 +97,7 @@
       }
     }
     .container {
-      max-width: none;
+      // max-width: none;
       .row{
         .col-6{
           width: 100%;
@@ -118,19 +120,27 @@
   .mod5{
     background-color: #bce9d5;
     background-image: url();
+    .regula{
+      .head {
+        padding-left: 2em;
+      }
+    }
+    .picture{
+      display: block;
+      background-image: url("../images/proces.jpg");
+      background-size: cover;
+      background-position: center;
+      padding:0;
+      height: 60vh;
+
+    }
     .container {
+      max-width: none;
       .narrow-text{
         display: none;
       }
       .row{
-        .picture{
-          display: inline-block;
-          background-image: url("../images/proces.jpg");
-          background-size: cover;
-          background-position: center;
-          padding:0;
-          height: 55vh;
-        }
+
         .width-text{
           display: inline-block;
           p{
@@ -138,6 +148,7 @@
             font-size: 16px;
             line-height: 24px;
             color: #333333;
+            padding-left: 2em;
           }
         }
         .col-6 {

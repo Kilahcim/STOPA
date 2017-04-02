@@ -6,18 +6,31 @@ $(document).ready(function(){
   var badText = $('.bad-text')
   var header = $('.hideparagraph').find('#show');
   var width = $(window).width();
+  var counter = 1;
 
   p.hide();
   header.show();
 
   listElement.on('click', function(){
+    counter= counter + 1
+    
+    if (counter % 2 == 0) {
+      $(this).find('.arrow').animate({  borderSpacing:  90 }, {
+        step: function(now,fx) {
+          $(this).css('transform','rotate('+now+'deg)');
+        },duration:'slow'
+      });
+      $(this).find('p').animate({height:'toggle'},1050);
+    } else {
+      $(this).find('.arrow').animate({  borderSpacing:  -5 }, {
+        step: function(now,fx) {
+          $(this).css('transform','rotate('+now+'deg)');
+        },duration:'slow'
+      });
+      $(this).find('p').animate({height:'toggle'},1050);
+    }
 
-    $(this).find('.arrow').animate({  borderSpacing:  90 }, {
-    step: function(now,fx) {
-      $(this).css('transform','rotate('+now+'deg)');
-    },duration:'slow'
-  });
-  $(this).find('p').animate({height:'toggle'},1050);
+
 
   });
   if(width > 959) {

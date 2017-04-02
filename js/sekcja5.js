@@ -25,6 +25,7 @@ $(document).ready(function(){
 
   button.on('click', function () {
     rest.slideToggle('slow');
+    button.hide();
 
   })
 

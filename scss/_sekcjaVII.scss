@@ -35,9 +35,9 @@
       .col-6 {
         position: relative;
         background-color: #a67c52;
-        height: 100vh;
+        height: 90vh;
           p:nth-child(1){
-            padding-top: 1em;
+            padding-top: 0.5em;
             font-size: 136px;
             font-family: "Cyrulik Sharp";
             color: #ffffff;
@@ -52,6 +52,7 @@
             text-align: center;
           }
         .iconOne{
+
           background-image: url("../images/modul7/icon1.png");
           background-size: cover;
           background-position: center;
@@ -64,7 +65,7 @@
       .col-6 {
         position: relative;
         background-color: #333333;
-        height: 100vh;
+        height: 90vh;
 
         p:first-child {
           padding-top: 1em;
@@ -96,12 +97,13 @@
 
     .slideThree{
       .col-6{
+
         position: relative;
         background-color: #bce9d5;
-        height: 100vh;
+        height: 90vh;
 
         p:first-child {
-          padding-top: 1em;
+          padding-top: 0.5em;
           color: #333333;
           font-family:"Cyrulik Sharp";
           font-size: 40px;
@@ -142,6 +144,7 @@
       height: 200px;
       width: 200px;
       margin: auto;
+      margin-top: 4em;
     }
   }
 }
@@ -187,7 +190,7 @@
       .image{
         display: inline-block;
         width: 50vw;
-        height: 100vh;
+        height: 90vh;
       }
     }
   }

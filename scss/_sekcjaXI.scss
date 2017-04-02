@@ -1,9 +1,11 @@
+
 .mod11 {
   background-color: #333333;
   .container{
     .row{
       .col-11{
-        width: 38.668%;
+        width: 100%;
+
       }
     }
   }
@@ -14,7 +16,7 @@
     }
   }
   .detales {
-    margin: auto;
+    margin: 0 auto;
     p {
       line-height: 24px;
       font-size: 16px;

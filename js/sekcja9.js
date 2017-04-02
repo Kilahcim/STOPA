@@ -13,7 +13,7 @@ $(document).ready(function(){
 
   listElement.on('click', function(){
     counter= counter + 1
-    
+
     if (counter % 2 == 0) {
       $(this).find('.arrow').animate({  borderSpacing:  90 }, {
         step: function(now,fx) {
@@ -27,7 +27,7 @@ $(document).ready(function(){
           $(this).css('transform','rotate('+now+'deg)');
         },duration:'slow'
       });
-      $(this).find('p').animate({height:'toggle'},1050);
+      $(this).find('p').animate({height:'toggle'},1550);
     }
 
 
